@@ -69,9 +69,7 @@
     height: 420px !important;
     margin: auto !important;
     padding: 0.5rem !important;
-
   }
-  
 }
 
 @media (min-width: 700px) AND (max-width: 1300px) {
