@@ -9,9 +9,11 @@
 html,
 body {
   font-family: 'Abhaya Libre', serif !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
 }
 
-/* navigation */
+/* nav bar */
 Link{
   color: #346025 !important;
 }

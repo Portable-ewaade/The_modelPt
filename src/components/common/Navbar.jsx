@@ -1,21 +1,18 @@
 import React from "react";
 import Link from "next/link";
 import styles from './navbar.module.css'
-import { Button } from "react-bootstrap";
 
 const Navbar = () => {
   return (
     <div className={styles.navbar_container}>
 
-      <nav
-        className='navbar navbar-expand-lg px-5'
-      >
+      <nav className='navbar navbar-expand-lg px-md-5'>
         <div className="container-fluid">
           <Link className="navbar-brand" href="#">
             <img src="/assets/logo-color-icon.png" alt="logo" width={45} height={50}/>
           </Link>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler border-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
