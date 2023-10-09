@@ -2,6 +2,7 @@
   background-color: #f0bbb5 !important;
   height: 90vh;
 }
+
 .section_2 {
   background-color: #d8948c !important;
   height: 50vh;
@@ -33,7 +34,7 @@
   margin-top: 6rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 400px)  {
   .home_banner {
     background-color: #f0bbb5 !important;
     height: 135vh !important;
@@ -59,7 +60,7 @@
     width: 380px;
   }
 }
-@media (min-width: 401px) {
+@media (min-width: 401px) AND (max-width: 600px) {
   .home_banner {
     background-color: #f0bbb5 !important;
     height: 130vh !important;
@@ -74,8 +75,7 @@
 
 @media (min-width: 700px) AND (max-width: 1300px) {
   .home_banner {
-    background-color: #f0bbb5 !important;
-    height: 65vh;
+    height: 65vh !important;
   }
   .home_banner img {
     width: 380px !important;
