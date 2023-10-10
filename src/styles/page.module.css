@@ -57,10 +57,10 @@
 }
 @media (max-width: 400px) {
   .home_banner img {
-    width: 375px !important;
+    width: 380px !important;
     height: 370px !important;
     margin: auto !important;
-    padding: 0.7rem !important;
+    padding: 0.5rem !important;
   }
   .section_2 p {
     width: 100% !important;
