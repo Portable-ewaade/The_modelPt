@@ -1,5 +1,8 @@
-
-  .btnn{
+.navbar_container{
+  background-color: #F2CAC4;
+  grid-column: 1 / span 12;
+}
+  /* .btnn{
     border-radius: 20px;
     padding: 5px 25px;
     color: #fff;
@@ -7,13 +10,11 @@
     border: none;
     font-size: 10px !important;
     margin-top: 0.5rem !important;
-   }
+   } */
+
 .navbar_links a{
   color: #2D6226 !important;
     font-weight: 600;
     display: inline-block !important;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
-  .navbar_container{
-    background-color: #F2CAC4;
-  }

@@ -1,0 +1,95 @@
+.home_banner {
+  background-color: #f0bbb5 !important;
+  /* height: 90vh; */
+  grid-column: 1 / span 12;
+  /* grid-row: 2 / 12; */
+}
+.section_2 {
+  background-color: #d8948c !important;
+  /* height: 50vh; */
+  /* text-align: center !important; */
+  grid-column: 1 / span 12;
+}
+.section_2 p {
+  width: 50% !important;
+}
+.section_3 {
+  background: linear-gradient(#edb6b0, #db958d);
+  /* height: 60vh; */
+  text-align: center !important;
+  grid-column: 1 / span 12;
+}
+.section_3_list h4 {
+  color: #2e7d0e !important;
+}
+.section_3_list {
+  color: #4d6535c5;
+  font-size: 1.2rem;
+  font-weight: lighter !important;
+  padding: 0;
+  margin-top: 3rem !important;
+}
+.btnn {
+  border-radius: 20px;
+  padding: 5px 25px;
+  color: #fff;
+  background-color: #356024;
+  border: #fff 1px solid;
+  margin-top: 6rem;
+}
+.icons {
+  width: 30% !important;
+  margin: 3rem auto !important;
+  font-size: 1.7rem !important;
+}
+
+@media (min-width: 400px) AND (max-width: 550px){
+  .home_banner img {
+    width: 415px !important;
+    height: 370px !important;
+    margin: auto !important;
+    padding: 0.7rem !important;
+  }
+  .section_2 p {
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+}
+@media (max-width: 400px) {
+  .home_banner img {
+    width: 375px !important;
+    height: 370px !important;
+    margin: auto !important;
+    padding: 0.7rem !important;
+  }
+  .section_2 p {
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+  .icons {
+    width: 45% !important;
+    margin: 3rem auto !important;
+    font-size: 1.7rem !important;
+  }
+}
+
+@media (min-width: 600px) AND (max-width: 900px) {
+  .home_banner img {
+   width: 395px !important;
+    height: 370px !important;
+    margin: auto !important;
+    padding: 0.7rem !important;
+  }
+  .section_2 p {
+    width: 100% !important;
+    padding: 1rem 2rem!important;
+  }
+}
+
+@media (min-width: 1200px) AND (max-width: 1400px){
+  .home_banner img {
+    width: 435px !important;
+    margin: auto !important;
+    padding: 0.7rem !important;
+  }
+}
