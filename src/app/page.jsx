@@ -1,23 +1,34 @@
 "use client";
 import Link from "next/link";
-import styles from "../styles/page.module.css"
+import styles from "../styles/page.module.css";
 import { Row, Col } from "react-bootstrap";
 import { FaXTwitter } from "react-icons/fa6";
-import { BsFacebook, BsInstagram } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
 import React from "react";
-import ContactForm from '@/components/contact/ContactForm'
+import ContactForm from "@/components/contact/ContactForm";
+import TrackVisibility from "react-on-screen";
+import 'animate.css';
 // import { ContactForm } from '../components/contact/ContactForm'
 
 export default function Home() {
   return (
     <main id="home">
       <section className="grid-container">
+        
         <div className={styles.home_banner}>
+        <TrackVisibility>
+        {({ isVisible }) => (
+          <div className={ isVisible ? " animate__animated animate__pulse " : "" }>
           <h2 className="text-center pt-5 px-2 px-md-0">
             We make sleek and modern designs for{" "}
             <br className="d-none d-md-block" /> your business or whatever short
             line <br className="d-none d-md-block" /> you choose
           </h2>
+          </div>
+        )}
+      </TrackVisibility>
+
           <Row>
             <Col sm={12} md={11} lg={8} className="mx-auto mt-5">
               <Row>
@@ -29,8 +40,8 @@ export default function Home() {
                     width={450}
                     height={350}
                   />
-                  <div className="text-center text-black mt-1">
-                    <Link href="/">The Model</Link>
+                  <div className="text-center text-black mt-1 fs-5 mb-5">
+                    <Link href="#contact">THE MODEL</Link>
                   </div>
                 </Col>
                 <Col md={6}>
@@ -41,26 +52,10 @@ export default function Home() {
                     width={450}
                     height={350}
                   />
-                  <div className="text-center text-black">
-                    <Link href="/" className="text-center mt-1">
-                      The PT
-                    </Link>
+                  <div className="text-center text-black fs-5 mt-1 mb-5">
+                    <Link href="#contact">THE PT</Link>
                   </div>
                 </Col>
-
-                <div className={styles.icons}>
-                  <Row>
-                    <Col>
-                      <BsFacebook />
-                    </Col>
-                    <Col>
-                      <FaXTwitter />
-                    </Col>
-                    <Col>
-                      <BsInstagram />
-                    </Col>
-                  </Row>
-                </div>
               </Row>
             </Col>
           </Row>
@@ -68,22 +63,40 @@ export default function Home() {
       </section>
 
       <section className="grid-container">
-        <div className={styles.section_2} >
-          <p className=" mx-auto pt-5 fs-5 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-            nesciunt saepe placeat! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Obcaecati aut, inventore nobis perspiciatis minus
-            reprehenderit voluptatem itaque suscipit impedit a eaque voluptas
-            adipisci facere molestias at, sit aliquam dolores non Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit. Unde soluta dolor
-            eriam ab dicta at
-          </p>
-
-        <ContactForm title="Send Us A Message " />
+        <div className={styles.section_2}>
+          <ContactForm title="Send Us A Message " />
+          <TrackVisibility>
+        {({ isVisible }) => (
+          <div
+            className={
+              isVisible ? " animate__animated animate__swing " : ""
+            }
+          >
+          <div className={styles.icons}>
+            <Row>
+              <Col>
+                <Link href="/">
+                  <FaLinkedin />
+                </Link>
+              </Col>
+              <Col>
+                <Link href="/">
+                  <FaXTwitter />
+                </Link>
+              </Col>
+              <Col>
+                <Link href="/">
+                  <BsInstagram />
+                </Link>
+              </Col>
+            </Row>
+          </div>
+          </div>
+        )}
+      </TrackVisibility>
         </div>
-        
       </section>
-      <section className="grid-container">
+      {/* <section className="grid-container">
         <div className={styles.section_3}>
           <img
             src="/assets/gold-line.jpg"
@@ -103,7 +116,7 @@ export default function Home() {
             <p>Illustration</p>
           </ul>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

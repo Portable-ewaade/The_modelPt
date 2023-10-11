@@ -3,16 +3,17 @@
 import emailjs from "@emailjs/browser";
 import Message from "./Message";
 import { Col, Row } from "react-bootstrap";
-import Select from "react-select";
 import { useRef, useState } from "react";
 import styles from './contact.module.css'
+import TrackVisibility from "react-on-screen";
+import 'animate.css';
+
 
 
  const ContactUs = () => {
   const [loading, setLoading] = useState(false);
   const [step, setStep] = useState(0);
   const [formError, setFormError] = useState("");
-  const [selectedOptions, setSelectedOptions] = useState([]);
 
   const form = useRef(null);
 
@@ -25,7 +26,6 @@ import styles from './contact.module.css'
     // Check if any required fields are empty
     const requiredFields = [
       "user_name",
-      "selectedOptions",
       "user_email",
       "phone_number",
       "what_to_do",
@@ -72,22 +72,17 @@ import styles from './contact.module.css'
       );
   };
 
-  const options = [
-    { value: "Software Development", label: "Software Development" },
-    { value: "Branding", label: "Branding" },
-    { value: "Product Design", label: "Product Design" },
-    { value: "Data Analytics", label: "Data Analytics" },
-    { value: "Strategy", label: "Strategy" },
-  ];
-
-  const handleMultiSelectChange = (selectedOptions) => {
-    setSelectedOptions(selectedOptions);
-  };
-
   return (
     <>
       <section className={` ${styles.form_container} pb-5 pt-4`} id="contact">
-        <div className="card px-5 border-0">
+      <TrackVisibility>
+        {({ isVisible }) => (
+          <div
+            className={
+              isVisible ? " animate__animated animate__pulse " : ""
+            }
+          >
+        <div className="card px-5 border-0 mt-5">
           <form className="mt-5" onSubmit={handleSubmit} ref={form}>
             {step === 0 && (
               <>
@@ -101,19 +96,6 @@ import styles from './contact.module.css'
                   className="form-control p-2 mb-3"
                   name="user_name"
                   placeholder="Full Name"
-                />
-
-                <label htmlFor="multiSelect">
-                  What would you like us to craft for you? (Choose one or more)
-                </label>
-                <Select
-                  
-                  options={options}
-                  isMulti
-                  name="selected_options"
-                  value={selectedOptions}
-                  onChange={handleMultiSelectChange}
-                  className="mb-3"
                 />
 
                 <div className="form-group fs-11 grey font-weight-medium">
@@ -180,6 +162,9 @@ import styles from './contact.module.css'
             </>
           )}
         </div>
+        </div>
+        )}
+      </TrackVisibility>
       </section>
     </>
   );
