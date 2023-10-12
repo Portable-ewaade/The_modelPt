@@ -3,11 +3,6 @@
    margin: auto;
    
 }
-.form_container p{
-   width: 100% ;
-   margin: auto;
-   
-}
 .form_container div{
     background-color: #cc8b84;
     color: #fff;
@@ -30,9 +25,11 @@
 }
 .form_container input::placeholder{
     font-size: 13px;
+    padding-left: 0.2rem;
 }
 .form_container textarea::placeholder{
     font-size: 14px;
+    padding-left: 0.2rem;
 }
 
 @media (max-width: 500px) {
@@ -40,10 +37,37 @@
         width: 100vw ;
         margin: auto;
      } 
+     .form_container input::placeholder{
+        font-size: 15px;
+    }
+    .form_container textarea::placeholder{
+        font-size: 15px;
+    }
+    .form_container label{
+        font-size: 1.15rem !important;
+     } 
+     .form_container Button{
+    padding: 0.5rem 3.5rem;
+    font-size: 1.2rem !important;
+}
+   
 }
 @media (min-width: 600px) AND (max-width: 900px) {
     .form_container{
         width: 80vw ;
         margin: auto;
      } 
+     .form_container input::placeholder{
+        font-size: 20px;
+    }
+    .form_container textarea::placeholder{
+        font-size: 20px;
+    }
+    .form_container label{
+        font-size: 1.4rem !important;
+     } 
+     .form_container Button{
+    padding: 0.5rem 3.5rem;
+    font-size: 1.4rem !important;
+}
   }

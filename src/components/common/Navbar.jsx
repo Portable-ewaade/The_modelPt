@@ -16,30 +16,30 @@ const Navbar = () => {
                 height={50}
               />
             </Link>
-            <button
-              className="navbar-toggler border-0 fs-5"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-          </div>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul
-                className={` ${styles.navbar_links} navbar-nav me-auto mb-2 mb-lg-0`}
+
+            <div className="dropdown">
+              <button
+                className="btn "
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                <li className="nav-item">
-                  <Link className="nav-link mx-4 fs-4 mt-3" href="#contact">
+                <span className="navbar-toggler-icon"></span>
+              </button>
+
+              <ul
+                className={` ${styles.navbar_links} dropdown-menu`}
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li className="dropdown-item">
+                  <Link className="nav-link fs-5" href="#contact">
                     CONTACT US
                   </Link>
                 </li>
               </ul>
             </div>
-
+          </div>
         </nav>
       </div>
     </section>

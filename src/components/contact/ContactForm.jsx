@@ -98,7 +98,7 @@ import 'animate.css';
                   placeholder="Full Name"
                 />
 
-                <div className="form-group fs-11 grey font-weight-medium">
+                <div className="form-group font-weight-medium">
                   <Row>
                     <Col md={6}>
                       <label htmlFor="inputEmailAddress">Email</label>
@@ -157,7 +157,7 @@ import 'animate.css';
               <Message
                 title={`Thanks for contacting us`}
                 status="success"
-                buttonText="Go to Homepage >"
+               
               />
             </>
           )}

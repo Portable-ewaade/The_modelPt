@@ -21,10 +21,25 @@ body {
 a{
   text-decoration: none !important;
   color: inherit !important;
-
 }
 
 /* nav bar */
-Link{
-  color: #346025 !important;
+
+.dropdown-menu {
+  top: 100%;
+  left: -150% !important;
+  margin-top: 1rem !important;
+}
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: transparent !important;
+}
+@media (max-width: 500px){
+  .dropdown-menu {
+    left: -205% !important;
+    font-size: 2px !important;
+  }
+  .dropdown-menu a{
+    font-size: 16px !important;
+    text-align: center !important;
+  }
 }

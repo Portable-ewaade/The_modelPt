@@ -1,6 +1,5 @@
 // use client
 import React, { useEffect } from "react";
-import Link from "next/link";
 
 const Message = ({ title, buttonText }) => {
   useEffect(() => {}, []);
@@ -14,9 +13,7 @@ const Message = ({ title, buttonText }) => {
             Our team of experts will get in touch with you in no time.
           </p>
 
-          <Link href="" className="text-color">
-            {buttonText ? buttonText : "Home"}
-          </Link>
+  
         </div>
       </div>
     </>

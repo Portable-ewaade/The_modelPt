@@ -30,33 +30,70 @@ text-decoration: 0.09rem underline !important;
   font-size: 1.7rem !important;
 }
 
-@media (min-width: 400px) AND (max-width: 550px){
+@media (max-width: 374px) {
+  .home_banner img {
+    width: 355px !important;
+    height: 350px !important;
+    margin: auto !important;
+    padding: 0.4rem !important;
+
+  }
+  .icons {
+    width: 40% !important;
+  }
+}
+
+@media (min-width: 375px) AND (max-width: 380px){
+  .home_banner img {
+    width: 370px !important;
+    height: 370px !important;
+    margin: auto !important;
+    padding: 0.4rem !important;
+  }
+  .icons {
+    width: 40% !important;
+  }
+
+}
+@media (min-width: 381px) AND (max-width: 390px){
+  .home_banner img {
+    width: 390px !important;
+    height: 380px !important;
+    margin: auto !important;
+    padding: 0.4rem !important;
+  }
+  .icons {
+    width: 40% !important;
+  }
+
+}
+@media (min-width: 391px) AND (max-width: 599px){
   .home_banner img {
     width: 415px !important;
-    height: 370px !important;
+    height: 380px !important;
+    margin: auto !important;
+    padding: 0.4rem !important;
+  }
+  .icons {
+    width: 40% !important;
+  }
+
+}
+
+
+@media (min-width: 600px) AND (max-width: 850px) {
+  .home_banner img {
+   width: 365px !important;
+    height: 390px !important;
     margin: auto !important;
     padding: 0.7rem !important;
   }
-
+  
 }
-@media (max-width: 400px) {
+@media (min-width: 851px) AND (max-width: 1199px) {
   .home_banner img {
-    width: 380px !important;
-    height: 370px !important;
-    margin: auto !important;
-    padding: 0.5rem !important;
-  }
-  .icons {
-    width: 45% !important;
-    margin: 3rem auto !important;
-    font-size: 1.7rem !important;
-  }
-}
-
-@media (min-width: 600px) AND (max-width: 900px) {
-  .home_banner img {
-   width: 395px !important;
-    height: 370px !important;
+   width: 400px !important;
+    height: 390px !important;
     margin: auto !important;
     padding: 0.7rem !important;
   }
