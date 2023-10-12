@@ -19,7 +19,6 @@ body {
   grid-template-rows: auto auto 1fr auto auto auto;
 }
 a{
-  text-decoration: none !important;
   color: inherit !important;
 }
 
