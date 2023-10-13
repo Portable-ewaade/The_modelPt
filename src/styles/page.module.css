@@ -34,7 +34,6 @@ text-decoration: 0.09rem underline !important;
   .home_banner img {
     width: 355px !important;
     height: 325px !important;
-    margin: auto !important;
     padding: 0.4rem !important;
 
   }
@@ -51,7 +50,6 @@ text-decoration: 0.09rem underline !important;
   .home_banner img {
     width: 370px !important;
     height: 340px !important;
-    margin: auto !important;
     padding: 0.4rem !important;
   }
   .icons {
@@ -66,7 +64,6 @@ text-decoration: 0.09rem underline !important;
   .home_banner img {
     width: 386px !important;
     height: 340px !important;
-    margin: auto !important;
     padding: 0.4rem !important;
   }
   .icons {
@@ -96,29 +93,49 @@ text-decoration: 0.09rem underline !important;
 /* tablet */
 @media (min-width: 600px) AND (max-width: 850px) {
   .home_banner img {
-   width: 375px !important;
-    height: 390px !important;
-    margin: auto !important;
-    padding: 0.7rem !important;
+   width: 345px !important;
   }
   .home_banner img:hover {
     transform: scale(1.05) !important;
   }
   
 }
-@media (min-width: 851px) AND (max-width: 1199px) {
+@media (min-width: 851px) AND (max-width: 1000px) {
   .home_banner img {
    width: 403px !important;
-    height: 360px !important;
-    margin: auto !important;
-    padding: 0.7rem !important;
+  }
+  .home_banner img:hover {
+    transform: scale(1.04) !important;
+  }
+}
+@media (min-width: 1001px) AND (max-width: 1100px) {
+  .home_banner img {
+   width: 403px !important;
+  }
+}
+@media (min-width: 1101px) AND (max-width: 1199px) {
+  .home_banner img {
+   width: 440px !important;
   }
 }
 
-@media (min-width: 1200px) AND (max-width: 1400px){
+@media (min-width: 1200px) AND (max-width: 1300px){
   .home_banner img {
-    width: 520px !important;
-    margin: auto !important;
-    padding: 0.7rem !important;
+    width: 490px !important;
+  }
+}
+@media (min-width: 1301px)  AND (max-width: 1400px){
+  .home_banner img {
+    width: 530px !important;
+  }
+}
+/* @media (min-width: 1401px)  AND (max-width: 1500px){
+  .home_banner img {
+    width: 580px !important;
+  }
+} */
+@media (min-width: 1501px) {
+  .home_banner img {
+    width: 575px !important;
   }
 }
