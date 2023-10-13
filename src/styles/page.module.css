@@ -129,11 +129,7 @@ text-decoration: 0.09rem underline !important;
     width: 530px !important;
   }
 }
-/* @media (min-width: 1401px)  AND (max-width: 1500px){
-  .home_banner img {
-    width: 580px !important;
-  }
-} */
+
 @media (min-width: 1501px) {
   .home_banner img {
     width: 575px !important;
