@@ -4,7 +4,7 @@
   transition: transform .2s !important;
 }
 .home_banner img:hover {
-  transform: scale(1.03) !important;
+  transform: scale(1.15) !important;
 }
 
 .home_banner a{
@@ -33,7 +33,7 @@ text-decoration: 0.09rem underline !important;
 @media (max-width: 374px) {
   .home_banner img {
     width: 355px !important;
-    height: 350px !important;
+    height: 325px !important;
     margin: auto !important;
     padding: 0.4rem !important;
 
@@ -41,59 +41,75 @@ text-decoration: 0.09rem underline !important;
   .icons {
     width: 40% !important;
   }
+  .home_banner img:hover {
+    transform: scale(1.03) !important;
+  }
+  
 }
 
 @media (min-width: 375px) AND (max-width: 380px){
   .home_banner img {
     width: 370px !important;
-    height: 370px !important;
+    height: 340px !important;
     margin: auto !important;
     padding: 0.4rem !important;
   }
   .icons {
     width: 40% !important;
+  }
+  .home_banner img:hover {
+    transform: scale(1.03) !important;
   }
 
 }
 @media (min-width: 381px) AND (max-width: 390px){
   .home_banner img {
-    width: 390px !important;
-    height: 380px !important;
+    width: 386px !important;
+    height: 340px !important;
     margin: auto !important;
     padding: 0.4rem !important;
   }
   .icons {
     width: 40% !important;
+  }
+  .home_banner img:hover {
+    transform: scale(1.03) !important;
   }
 
 }
 @media (min-width: 391px) AND (max-width: 599px){
   .home_banner img {
     width: 415px !important;
-    height: 380px !important;
+    height: 350px !important;
     margin: auto !important;
     padding: 0.4rem !important;
   }
   .icons {
     width: 40% !important;
   }
+  .home_banner img:hover {
+    transform: scale(1.03) !important;
+  }
 
 }
 
-
+/* tablet */
 @media (min-width: 600px) AND (max-width: 850px) {
   .home_banner img {
-   width: 365px !important;
+   width: 375px !important;
     height: 390px !important;
     margin: auto !important;
     padding: 0.7rem !important;
+  }
+  .home_banner img:hover {
+    transform: scale(1.05) !important;
   }
   
 }
 @media (min-width: 851px) AND (max-width: 1199px) {
   .home_banner img {
-   width: 400px !important;
-    height: 390px !important;
+   width: 403px !important;
+    height: 360px !important;
     margin: auto !important;
     padding: 0.7rem !important;
   }
@@ -101,7 +117,7 @@ text-decoration: 0.09rem underline !important;
 
 @media (min-width: 1200px) AND (max-width: 1400px){
   .home_banner img {
-    width: 435px !important;
+    width: 520px !important;
     margin: auto !important;
     padding: 0.7rem !important;
   }

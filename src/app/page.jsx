@@ -33,29 +33,29 @@ export default function Home() {
           </TrackVisibility>
 
           <Row className="p-0 m-0">
-            <Col sm={12} md={11} lg={8} className="mx-auto mt-5 p-0">
+            <Col sm={12} md={11} lg={10} className="mx-auto mt-5 p-0">
               <Row>
                 <Col md={6} className="">
                   <img
-                    src="/assets/model-1.jpg "
+                    src="/assets/the-model.png "
                     alt="model-image"
                     className="rounded-5 "
-                    width={450}
+                    width={550}
                     height={350}
                   />
-                  <div className="text-center text-black mt-1 fs-4 mb-5">
+                  <div className="text-center text-black mt-4 fs-4 mb-5">
                     <Link href="#contact">THE MODEL</Link>
                   </div>
                 </Col>
                 <Col md={6}>
                   <img
-                    src="/assets/model-2.png "
+                    src="/assets/the-pt.png "
                     alt="model-image"
                     className="rounded-5"
-                    width={450}
+                    width={550}
                     height={350}
                   />
-                  <div className="text-center text-black fs-4 mt-1 mb-5">
+                  <div className="text-center text-black fs-4 mt-4 mb-5">
                     <Link href="#contact">THE PT</Link>
                   </div>
                 </Col>
