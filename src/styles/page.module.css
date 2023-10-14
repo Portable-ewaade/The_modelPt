@@ -43,7 +43,6 @@ text-decoration: 0.09rem underline !important;
   .home_banner img:hover {
     transform: scale(1.03) !important;
   }
-  
 }
 
 @media (min-width: 375px) AND (max-width: 380px){
