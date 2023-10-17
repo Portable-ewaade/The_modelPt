@@ -27,7 +27,7 @@ import 'animate.css';
     const requiredFields = [
       "user_name",
       "user_email",
-      "phone_number",
+      // "phone_number",
       "what_to_do",
     ];
 
@@ -100,8 +100,8 @@ import 'animate.css';
 
                 <div className="form-group font-weight-medium">
                   <Row>
-                    <Col md={6}>
-                      <label htmlFor="inputEmailAddress">Email</label>
+                    <Col >
+                      <label htmlFor="inputEmailAddress">Email Address</label>
                       <input
                         type="email"
                         className="form-control p-2 mb-3"
@@ -109,7 +109,7 @@ import 'animate.css';
                         placeholder="Email Address"
                       />
                     </Col>
-                    <Col md={6}>
+                    {/* <Col md={6}>
                       <label htmlFor="inputEmailAddress">Mobile Number</label>
                       <input
                         type="tel"
@@ -117,9 +117,9 @@ import 'animate.css';
                         name="phone_number"
                         placeholder="Phone number"
                       />
-                    </Col>
+                    </Col> */}
                   </Row>
-                  <label htmlFor="textarea">Describe What You Want</label>
+                  <label htmlFor="textarea">Reason for contacting us</label>
                   <textarea
                     type="text"
                     className="form-control mb-3"

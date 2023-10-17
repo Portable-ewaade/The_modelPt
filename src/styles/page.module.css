@@ -8,7 +8,8 @@
 }
 
 .home_banner a{
-text-decoration: 0.09rem underline !important;
+text-decoration: 1.5px  underline !important;
+
 }
 .section_2 {
   background-color: #d8948c !important;
@@ -38,7 +39,7 @@ text-decoration: 0.09rem underline !important;
 
   }
   .icons {
-    width: 40% !important;
+    width: 70% !important;
   }
   .home_banner img:hover {
     transform: scale(1.03) !important;
@@ -52,7 +53,7 @@ text-decoration: 0.09rem underline !important;
     padding: 0.4rem !important;
   }
   .icons {
-    width: 40% !important;
+    width: 70% !important;
   }
   .home_banner img:hover {
     transform: scale(1.03) !important;
@@ -66,7 +67,7 @@ text-decoration: 0.09rem underline !important;
     padding: 0.4rem !important;
   }
   .icons {
-    width: 40% !important;
+    width: 70% !important;
   }
   .home_banner img:hover {
     transform: scale(1.03) !important;
@@ -81,7 +82,7 @@ text-decoration: 0.09rem underline !important;
     padding: 0.4rem !important;
   }
   .icons {
-    width: 40% !important;
+    width: 70% !important;
   }
   .home_banner img:hover {
     transform: scale(1.03) !important;
@@ -96,7 +97,7 @@ text-decoration: 0.09rem underline !important;
     padding: 0.4rem !important;
   }
   .icons {
-    width: 40% !important;
+    width: 70% !important;
   }
   .home_banner img:hover {
     transform: scale(1.03) !important;
@@ -111,7 +112,7 @@ text-decoration: 0.09rem underline !important;
     padding: 0.5rem !important;
   }
   .icons {
-    width: 40% !important;
+    width: 70% !important;
   }
   .home_banner img:hover {
     transform: scale(1.03) !important;

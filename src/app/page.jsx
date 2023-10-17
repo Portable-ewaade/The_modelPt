@@ -2,9 +2,10 @@
 import Link from "next/link";
 import styles from "../styles/page.module.css";
 import { Row, Col } from "react-bootstrap";
-import { FaXTwitter } from "react-icons/fa6";
-import { BsInstagram } from "react-icons/bs";
+import { FaTiktok, FaXTwitter } from "react-icons/fa6";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
+import { RxDoubleArrowDown } from "react-icons/rx";
 import React from "react";
 import ContactForm from "@/components/contact/ContactForm";
 import TrackVisibility from "react-on-screen";
@@ -23,11 +24,9 @@ export default function Home() {
                   isVisible ? " animate__animated animate__pulse " : ""
                 }
               >
-                <h2 className="text-center pt-5 px-2 px-md-0">
-                  We make sleek and modern designs for{" "}
-                  <br className="d-none d-md-block" /> your business or whatever
-                  short line <br className="d-none d-md-block" /> you choose
-                </h2>
+                <h1 className="text-center pt-5 px-2 px-md-0">
+                  Helping generations age better
+                </h1>
               </div>
             )}
           </TrackVisibility>
@@ -36,6 +35,8 @@ export default function Home() {
             <Col sm={12} md={11} lg={10} className="mx-auto mt-5 p-0">
               <Row>
                 <Col md={6} className="">
+                  <Link href="#contact">
+
                   <img
                     src="/assets/the-model.png "
                     alt="model-image"
@@ -43,11 +44,14 @@ export default function Home() {
                     width={550}
                     height={350}
                   />
+                  </Link>
                   <div className="text-center text-black mt-4 fs-4 mb-5">
                     <Link href="#contact">THE MODEL</Link>
                   </div>
                 </Col>
                 <Col md={6}>
+                  <Link href="#contact">
+
                   <img
                     src="/assets/the-pt.png "
                     alt="model-image"
@@ -55,19 +59,25 @@ export default function Home() {
                     width={550}
                     height={350}
                   />
+                  </Link>
                   <div className="text-center text-black fs-4 mt-4 mb-5">
                     <Link href="#contact">THE PT</Link>
                   </div>
                 </Col>
               </Row>
             </Col>
+
+            <Link href="#contact">
+              <h2 className="text-center animate__animated animate__slow animate__bounce animate__infinite mt-5">
+                <RxDoubleArrowDown />
+              </h2>
+            </Link>
           </Row>
         </div>
       </section>
 
       <section className="grid-container">
         <div className={styles.section_2}>
-
           <ContactForm title="Send Us A Message " />
 
           <TrackVisibility>
@@ -80,20 +90,30 @@ export default function Home() {
                 <div className={styles.icons}>
                   <Row>
                     <Col>
-                      <Link href="/">
+                      <Link href="https://www.linkedin.com/in/dr-muftiah-jokomba-001819a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
                         <FaLinkedin />
                       </Link>
                     </Col>
 
                     <Col>
-                      <Link href="/">
+                      <Link href="https://twitter.com/TheModelPT?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
                         <FaXTwitter />
                       </Link>
                     </Col>
 
                     <Col>
-                      <Link href="/">
+                      <Link href="https://www.instagram.com/themodel_pt">
                         <BsInstagram />
+                      </Link>
+                    </Col>
+                    <Col>
+                      <Link href="https://www.facebook.com/profile.php?id=100067550227802&mibextid=LQQJ4d">
+                        <BsFacebook />
+                      </Link>
+                    </Col>
+                    <Col>
+                      <Link href="https://www.tiktok.com/@themodelpt">
+                        <FaTiktok />
                       </Link>
                     </Col>
                   </Row>
