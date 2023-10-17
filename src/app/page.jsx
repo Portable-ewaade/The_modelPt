@@ -25,7 +25,7 @@ export default function Home() {
                 }
               >
                 <h1 className="text-center pt-5 px-2 px-md-0">
-                  Helping generations age better
+                  Helping Generations Age Better
                 </h1>
               </div>
             )}
